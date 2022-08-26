@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>web index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/assets/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+<style>
+h1 { font-size:18pt; font-weight:bold; color: gray; }
+body { font-size:13pt; color:gray; margin:5px 25px; }
+</style>
+</head>
+<body>
+	<h1>Hello Page</h1>
+	<p class="msg">This is Thymeleaf sample page.</p>
+	<p class="msg">This is test</p>
+	<p class="msg" th:text="${msg}"></p>
+<div class="">
+    <div class="pt-4 px-4 m-4 border border-right">
+        <div class="mb-4">
+            pt-4 px-4 m-4 border border-right
+        </div>
+        <div class="mb-4">
+            mb-4
+            <label for="formGroupExampleInput" class="form-label">Example label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        </div>
+        <div class="mb-4">
+            mb-4
+            <label for="formGroupExampleInput2" class="form-label">Another label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        </div>
+    </div>
+</div> </body>
+</html>
